@@ -1,19 +1,24 @@
-/* 判断n位数（n>=3）是否为 水仙花数 */
+/* 判断n位数（n>=3）是否为 水仙花数 
+简单一点 n 取3 */
 # include<stdio.h>
 int main (void)
 {
-    int n,sum=0,term，tmp；
-    printf("Enter n:\n");
-    scanf("%d",&n);
+    int n,sum,term,tmp;
     
-    for()
-    while(n>0)
+    for(n=100;n<=999;n++)
+  { 
+    sum=0;
+    tmp=n;
+    while(tmp>0)
     {
         term= tmp%10;
-        sum += term;
-        n= n/10;
+        sum += term*term*term;
+        tmp=tmp/10;
     }
-
-    printf("Sum is %d\n",sum);
+    if (n == sum)
+    {
+      printf("n is %d\n",n);
+    }
+  }
     return 0;
 }
