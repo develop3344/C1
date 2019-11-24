@@ -24,9 +24,9 @@ int main (void)
     tmp=n;
     while(tmp>0)
     {
-        term= tmp%10;   / *分解出末位数 */
+        term= tmp%10;   /* 分解出末位数 */
         sum += term*term*term;  /* 末位数的三次方 */
-        tmp=tmp/10;     / *去掉末位数 */
+        tmp=tmp/10;     /* 去掉末位数 */
     }
     if (n == sum)
     {
