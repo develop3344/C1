@@ -6,7 +6,7 @@ int main(void)
     printf("Enter n:\n");
     scanf("%d",&n);
 
-    for(i=2;i<=n-1;i++)        /*  i<=sqrt(n) */
+    for(i=2;i<=n-1;i++)        /*  i<=sqrt(n) 为double类型 运行一下???// */
     {
         if(n%i==0)
         {
