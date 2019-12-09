@@ -20,7 +20,7 @@ int isPrime  (int x) //函数首部后面不能加分号，它和函数体一起
     {
         return 0;
     }
-}    //略有问题
+}    
 
 int main (void)
 {
