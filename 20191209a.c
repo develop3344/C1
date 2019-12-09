@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int isPrime  (int x);
+int isPrime  (int x) //函数首部后面不能加分号，它和函数体一起构成完整的函数定义
 
 {
     int  i;
