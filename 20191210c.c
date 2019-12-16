@@ -1,27 +1,24 @@
-//求最大值
+//求最大值  假设第一个数为最大值 再循环比较 即可
+//数组用 中括号
 #include <stdio.h>
-#define LEN 45
+#define LEN 5
+
 int main(void)
 {
-    int a[LEN]={0}, i，max;   
-
-    printf("Enter array a:\n");
-    for (i = 0; i <LEN; i++)
+    int a[LEN], max, i;
+    for (i = 0; i < LEN; i++)
     {
         scanf("%d", &a[i]);
     }
-    
-    max= a[0];    //max=0;
-
-    for(i=1; i<LEN;i++)
+    max = a[0];
+    for (i = 1; i < LEN; i++)
     {
-        if(a[i]>a[max])
+        if (a[i] > max)
         {
-            max=a[i];  //max=i;
+            max = a[i];
         }
     }
-    printf("Max is %d",a[max]);
-    return 0;
 
-   
+    printf("Max is %d\n", max);
+    return 0;
 }
