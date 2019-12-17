@@ -30,7 +30,7 @@ void sort(int x[], int n) //为什么为 void
             {
                 tmp = x[j];     //tmp 中间变量
                 x[j] = x[i];
-                x[i] = tmp;
+                x[i] = tmp;     //注意顺序 构成一个环
             }
         }
     }
