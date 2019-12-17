@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    int a[LEN], max, i;
+    int a[LEN], i;
     printf("Enter an array:\n");
     for (i = 0; i < LEN; i++)
     {
