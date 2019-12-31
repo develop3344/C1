@@ -8,7 +8,7 @@ int main(void)
 {
     int x,y,z,t;
     printf("Enter x,y,z:");
-    scanf("%d %d %d",&x,&y,&z);
+    scanf("%d%d%d",&x,&y,&z);
     if(x>y)
     {t=x;x=y;y=t;}  /*交换x，y 的值*/
     if(x>z)
