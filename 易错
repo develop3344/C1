@@ -1,4 +1,21 @@
-for （；；；）
-一个整形变量 大于或等于100 小于或等于1000 如何表示
-a[2][3] 从a[0][0] 到 a[1][2] 共6个 元素
-函数 何时为void 返回值如何写 何时写 if---return 1  else---return 0
+1. for （；；；）
+2. 一个整形变量 大于或等于100 小于或等于1000 如何表示
+3. a[2][3] 从a[0][0] 到 a[1][2] 共6个 元素
+4. 函数 何时为void 返回值如何写 何时写 if---return 1  else---return 0
+5.//输入三个数 从小到大 排列 自己先写！！！！
+#include <stdio.h>
+int main(void)
+{
+    int x,y,z,t;
+    printf("Enter x,y,z:");
+    scanf("%d %d %d",&x,&y,&z);
+    if(x>y)
+    {t=x;x=y;y=t;}  /*交换x，y 的值*/
+    if(x>z)
+    {t=x;x=z;z=t;}
+    if(y>z)
+    {t=y;y=z;z=t;}
+    printf("from small to big:");
+    printf("%d %d %d\n",x,y,z);
+    return 0;
+}
