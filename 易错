@@ -15,7 +15,7 @@ int main(void)
     {t=x;x=z;z=t;}
     if(y>z)
     {t=y;y=z;z=t;}
-    printf("from small to big:");
+    printf("from small to large:");
     printf("%d %d %d\n",x,y,z);
     return 0;
 }
